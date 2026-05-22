@@ -1,7 +1,7 @@
-using ClashRoyaleApi.DTOs.Common;
+using ClashRoyaleApiLib.DTOs.Common;
 using System.Text.Json.Serialization;
 
-namespace ClashRoyaleApi.DTOs.Players
+namespace ClashRoyaleApiLib.DTOs.Players
 {
     /// <summary>A card as it appears in a player's collection or current deck.</summary>
     public class PlayerCardDto

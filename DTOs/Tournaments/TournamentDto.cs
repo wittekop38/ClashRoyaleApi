@@ -1,9 +1,9 @@
-using ClashRoyaleApi.DTOs.Common;
-using ClashRoyaleApi.DTOs.Players;
+using ClashRoyaleApiLib.DTOs.Common;
+using ClashRoyaleApiLib.DTOs.Players;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace ClashRoyaleApi.DTOs.Tournaments
+namespace ClashRoyaleApiLib.DTOs.Tournaments
 {
     /// <summary>Full tournament data returned by GET /tournaments/{tournamentTag}.</summary>
     public class TournamentDto

@@ -1,8 +1,8 @@
-using ClashRoyaleApi.DTOs.Common;
+using ClashRoyaleApiLib.DTOs.Common;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace ClashRoyaleApi.DTOs.Clans
+namespace ClashRoyaleApiLib.DTOs.Clans
 {
     /// <summary>Full clan profile returned by GET /clans/{clanTag}.</summary>
     public class ClanDto

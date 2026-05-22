@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace ClashRoyaleApi.DTOs.Players
+namespace ClashRoyaleApiLib.DTOs.Players
 {
     /// <summary>A player's Path of Legend result for a specific season.</summary>
     public class PathOfLegendSeasonResultDto

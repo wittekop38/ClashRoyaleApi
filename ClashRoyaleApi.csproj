@@ -4,6 +4,22 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <!-- NuGet package metadata -->
+    <PackageId>ClashRoyaleApiLib</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>wittekop</Authors>
+    <Description>C# wrapper for the Clash Royale API. Covers all endpoints: players, clans, cards, tournaments, leaderboards, locations, seasons, and Path of Legend rankings.</Description>
+    <PackageProjectUrl>https://github.com/wittekop38/ClashRoyaleApi</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/wittekop38/ClashRoyaleApi</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" Condition="Exists('..\README.md')" />
+  </ItemGroup>
 
 </Project>

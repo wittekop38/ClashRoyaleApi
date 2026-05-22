@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace ClashRoyaleApi.DTOs.Common
+namespace ClashRoyaleApiLib.DTOs.Common
 {
     /// <summary>
     /// Wraps a paginated API response. Use <see cref="Paging"/> to retrieve cursor values

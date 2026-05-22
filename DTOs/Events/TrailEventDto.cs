@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace ClashRoyaleApi.DTOs.Events
+namespace ClashRoyaleApiLib.DTOs.Events
 {
     public class TrailEventDto
     {

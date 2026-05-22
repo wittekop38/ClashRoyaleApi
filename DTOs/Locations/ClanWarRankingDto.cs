@@ -1,7 +1,7 @@
-using ClashRoyaleApi.DTOs.Common;
+using ClashRoyaleApiLib.DTOs.Common;
 using System.Text.Json.Serialization;
 
-namespace ClashRoyaleApi.DTOs.Locations
+namespace ClashRoyaleApiLib.DTOs.Locations
 {
     public class ClanWarRankingDto
     {

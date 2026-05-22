@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace ClashRoyaleApi.DTOs.Clans
+namespace ClashRoyaleApiLib.DTOs.Clans
 {
     /// <summary>A single entry in the legacy clan war log.</summary>
     public class ClanWarLogEntryDto

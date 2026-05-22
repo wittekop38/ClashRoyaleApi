@@ -1,4 +1,4 @@
-namespace ClashRoyaleApi
+namespace ClashRoyaleApiLib
 {
     /// <summary>
     /// Thrown when the Clash Royale API returns a non-success HTTP response.

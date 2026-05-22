@@ -1,7 +1,7 @@
-using ClashRoyaleApi.DTOs.Common;
+using ClashRoyaleApiLib.DTOs.Common;
 using System.Text.Json.Serialization;
 
-namespace ClashRoyaleApi.DTOs.Cards
+namespace ClashRoyaleApiLib.DTOs.Cards
 {
     /// <summary>A card as it appears in the global card list from GET /cards.</summary>
     public class CardDto

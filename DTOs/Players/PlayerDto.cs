@@ -1,8 +1,8 @@
-using ClashRoyaleApi.DTOs.Common;
+using ClashRoyaleApiLib.DTOs.Common;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace ClashRoyaleApi.DTOs.Players
+namespace ClashRoyaleApiLib.DTOs.Players
 {
     public class PlayerDto
     {
