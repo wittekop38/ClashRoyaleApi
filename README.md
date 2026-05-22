@@ -2,7 +2,7 @@
 
 A lightweight, fully typed C# wrapper for the [Clash Royale API v1](https://developer.clashroyale.com).
 
-[![NuGet](https://img.shields.io/nuget/v/ClashRoyaleApiLib?color=brightgreen)]([https://www.nuget.org/packages/ClashRoyaleApiLib])
+[![NuGet](https://img.shields.io/nuget/v/ClashRoyaleApiLib?color=brightgreen)](https://www.nuget.org/packages/ClashRoyaleApiLib)
 
 ## Installation
 
