@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace ClashRoyaleApi.DTOs.Players
+namespace ClashRoyaleApiLib.DTOs.Players
 {
     public class LeagueStatisticsDto
     {

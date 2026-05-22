@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace ClashRoyaleApi.DTOs.Clans
+namespace ClashRoyaleApiLib.DTOs.Clans
 {
     /// <summary>Current River Race state returned by GET /clans/{clanTag}/currentriverrace.</summary>
     public class RiverRaceDto

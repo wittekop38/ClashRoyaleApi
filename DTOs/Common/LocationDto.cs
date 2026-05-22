@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace ClashRoyaleApi.DTOs.Common
+namespace ClashRoyaleApiLib.DTOs.Common
 {
     public class LocationDto
     {

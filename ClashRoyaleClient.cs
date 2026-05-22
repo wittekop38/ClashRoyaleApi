@@ -1,15 +1,15 @@
-using ClashRoyaleApi.DTOs.Cards;
-using ClashRoyaleApi.DTOs.Clans;
-using ClashRoyaleApi.DTOs.Common;
-using ClashRoyaleApi.DTOs.Events;
-using ClashRoyaleApi.DTOs.Locations;
-using ClashRoyaleApi.DTOs.Players;
-using ClashRoyaleApi.DTOs.Tournaments;
+using ClashRoyaleApiLib.DTOs.Cards;
+using ClashRoyaleApiLib.DTOs.Clans;
+using ClashRoyaleApiLib.DTOs.Common;
+using ClashRoyaleApiLib.DTOs.Events;
+using ClashRoyaleApiLib.DTOs.Locations;
+using ClashRoyaleApiLib.DTOs.Players;
+using ClashRoyaleApiLib.DTOs.Tournaments;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text.Json;
 
-namespace ClashRoyaleApi
+namespace ClashRoyaleApiLib
 {
     /// <summary>
     /// Lightweight wrapper for the Clash Royale API v1.
@@ -122,6 +122,11 @@ namespace ClashRoyaleApi
         }
 
         /// <summary>Retrieves a clan's current legacy clan war state.</summary>
+        /// <remarks>
+        /// ⚠️ This endpoint has been permanently removed by Supercell (HTTP 410 Gone).
+        /// It is kept here for reference only and will always throw <see cref="ClashRoyaleApiException"/> with StatusCode 410.
+        /// </remarks>
+        [Obsolete("This API endpoint has been permanently removed by Supercell (HTTP 410 Gone).")]
         public async Task<ClanWarDto> GetCurrentClanWarAsync(string clanTag)
             => await GetAsync<ClanWarDto>($"clans/{FormatTag(clanTag)}/currentwar");
 
@@ -166,8 +171,8 @@ namespace ClashRoyaleApi
             => await GetAsync<TournamentDto>($"tournaments/{FormatTag(tournamentTag)}");
 
         /// <summary>Gets the list of current global ladder tournaments.</summary>
-        public async Task<List<LadderTournamentDto>> GetGlobalTournamentsAsync()
-            => await GetAsync<List<LadderTournamentDto>>("globaltournaments") ?? [];
+        public async Task<PagedResponseDto<LadderTournamentDto>> GetGlobalTournamentsAsync()
+            => await GetAsync<PagedResponseDto<LadderTournamentDto>>("globaltournaments");
 
         /// <summary>
         /// Gets rankings for a global ladder tournament.
@@ -191,11 +196,11 @@ namespace ClashRoyaleApi
         // ── Leaderboards ──────────────────────────────────────────────────────
 
         /// <summary>Gets all available leaderboards.</summary>
-        public async Task<List<LeaderboardDto>> GetLeaderboardsAsync()
-            => await GetAsync<List<LeaderboardDto>>("leaderboards") ?? [];
+        public async Task<PagedResponseDto<LeaderboardDto>> GetLeaderboardsAsync()
+            => await GetAsync<PagedResponseDto<LeaderboardDto>>("leaderboards");
 
         /// <summary>Gets a specific leaderboard by ID.</summary>
-        public async Task<LeaderboardDto> GetLeaderboardAsync(string leaderboardId)
+        public async Task<LeaderboardDto> GetLeaderboardAsync(int leaderboardId)
             => await GetAsync<LeaderboardDto>($"leaderboard/{leaderboardId}");
 
         // ── Locations ─────────────────────────────────────────────────────────
@@ -259,12 +264,12 @@ namespace ClashRoyaleApi
         // ── Seasons ───────────────────────────────────────────────────────────
 
         /// <summary>Lists all league (trophy road) seasons.</summary>
-        public async Task<List<LeagueSeasonDto>> GetSeasonsAsync()
-            => await GetAsync<List<LeagueSeasonDto>>("locations/global/seasons") ?? [];
+        public async Task<PagedResponseDto<LeagueSeasonDto>> GetSeasonsAsync()
+            => await GetAsync<PagedResponseDto<LeagueSeasonDto>>("locations/global/seasons");
 
         /// <summary>Lists all league seasons (v2 endpoint).</summary>
-        public async Task<List<LeagueSeasonDto>> GetSeasonsV2Async()
-            => await GetAsync<List<LeagueSeasonDto>>("locations/global/seasonsV2") ?? [];
+        public async Task<PagedResponseDto<LeagueSeasonDto>> GetSeasonsV2Async()
+            => await GetAsync<PagedResponseDto<LeagueSeasonDto>>("locations/global/seasonsV2");
 
         /// <summary>Gets information about a specific league season.</summary>
         /// <param name="seasonId">Season identifier (e.g. "2023-06").</param>

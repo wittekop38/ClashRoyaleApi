@@ -1,8 +1,8 @@
-using ClashRoyaleApi.DTOs.Common;
+using ClashRoyaleApiLib.DTOs.Common;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace ClashRoyaleApi.DTOs.Tournaments
+namespace ClashRoyaleApiLib.DTOs.Tournaments
 {
     /// <summary>A global ladder tournament returned by GET /globaltournaments.</summary>
     public class LadderTournamentDto

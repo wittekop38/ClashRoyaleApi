@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace ClashRoyaleApi.DTOs.Players
+namespace ClashRoyaleApiLib.DTOs.Players
 {
     /// <summary>A single round within a multi-round battle (e.g. best-of-3 challenges).</summary>
     public class PlayerBattleRoundDto

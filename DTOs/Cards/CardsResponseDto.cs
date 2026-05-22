@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace ClashRoyaleApi.DTOs.Cards
+namespace ClashRoyaleApiLib.DTOs.Cards
 {
     /// <summary>
     /// Response from GET /cards. Contains the main card list and the separate support card list.

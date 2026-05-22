@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace ClashRoyaleApi.DTOs.Locations
+namespace ClashRoyaleApiLib.DTOs.Locations
 {
     /// <summary>Identifies a league (trophy road) season.</summary>
     public class LeagueSeasonDto

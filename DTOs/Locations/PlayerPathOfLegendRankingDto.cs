@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace ClashRoyaleApi.DTOs.Locations
+namespace ClashRoyaleApiLib.DTOs.Locations
 {
     /// <summary>A player's Path of Legend ranking for a location or global season.</summary>
     public class PlayerPathOfLegendRankingDto

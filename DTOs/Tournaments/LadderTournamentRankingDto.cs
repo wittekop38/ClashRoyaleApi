@@ -1,7 +1,7 @@
-using ClashRoyaleApi.DTOs.Locations;
+using ClashRoyaleApiLib.DTOs.Locations;
 using System.Text.Json.Serialization;
 
-namespace ClashRoyaleApi.DTOs.Tournaments
+namespace ClashRoyaleApiLib.DTOs.Tournaments
 {
     /// <summary>A player's ranking in a global ladder tournament.</summary>
     public class LadderTournamentRankingDto

@@ -1,7 +1,7 @@
-using ClashRoyaleApi.DTOs.Common;
+using ClashRoyaleApiLib.DTOs.Common;
 using System.Text.Json.Serialization;
 
-namespace ClashRoyaleApi.DTOs.Players
+namespace ClashRoyaleApiLib.DTOs.Players
 {
     /// <summary>Minimal clan info embedded in player and battle responses.</summary>
     public class PlayerClanDto
